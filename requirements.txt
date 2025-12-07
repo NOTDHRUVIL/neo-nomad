@@ -1,0 +1,9 @@
+streamlit
+spoon-ai-sdk
+python-dotenv
+requests
+elevenlabs
+networkx
+pyvis
+orjson
+pydantic
