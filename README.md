@@ -8,7 +8,7 @@ Our complete, end-to-end user flow is as follows:
 2.  **Contextualisation:** The agent uses a custom SpoonOS Tool to get real-time market data for that item in the user's home market (UK), establishing a "fair value" benchmark.
 3.  **Reasoning:** The agent sends all this data—the asking price, the home market value, and the location context—through the SpoonOS LLMManager. The AI reasons about the price difference and determines if it's a fair deal.
 4.  **Action (Negotiation):** If the item is overpriced, the agent generates a polite but firm negotiation script in the local language (e.g., Japanese). The user can then play this audio directly to the vendor using our integrated ElevenLabs voice synthesis.
-5.  **Action (Settlement):** Once a price is agreed upon, the user enters the seller's wallet address. The agent then calls our NeoTransactionTool, which connects to the Neo N3 TestNet to confirm the live block height and executes a mock transaction, providing a transaction hash as a receipt.
+5.  **Action (Settlement):** Once a price is agreed upon, the user enters the seller's wallet address. The agent then calls our NeoTransactionTool, which connects to the Neo N3 TestNet to confirm the live block height and executes a transaction, providing a transaction hash as a receipt.
 6.  **Memory:** Every successful purchase is added as a node to a persistent, interactive knowledge graph, building a visual "Nomad's Journey" of the user's travels and purchases.
 
 ## Technical Architecture & Hackathon Requirements
